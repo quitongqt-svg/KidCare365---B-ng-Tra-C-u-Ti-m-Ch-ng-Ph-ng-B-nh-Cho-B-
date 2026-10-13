@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KidCare 365 - Sổ Tay Tiêm Chủng & Thiết Bị Cho Bé</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans min-h-screen flex flex-col justify-between">
+
+  <!-- Header -->
+  <header class="bg-white border-b py-4 px-6 flex justify-between items-center shadow-sm sticky top-0 z-50">
+    <div class="flex items-center space-x-2">
+      <div class="w-8 h-8 bg-teal-600 rounded-lg flex items-center justify-center text-white text-lg font-bold">💉</div>
+      <span class="font-bold text-lg text-slate-900">KidCare 365</span>
+    </div>
+    <span class="text-xs bg-teal-50 text-teal-700 px-3 py-1 rounded-full font-semibold border border-teal-200">
+      Lịch VNVC & Long Châu 2026
+    </span>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-xl w-full mx-auto p-4 space-y-5 flex-grow">
+
+    <!-- Banner -->
+    <div class="bg-gradient-to-r from-teal-600 to-emerald-600 rounded-2xl p-5 text-white shadow-md space-y-2">
+      <h1 class="text-lg font-bold">👶 Tra Cứu Lịch Tiêm & Bộ Thiết Bị Cho Bé</h1>
+      <p class="text-xs text-teal-100 leading-relaxed">
+        Bấm chọn đúng độ tuổi của bé để mở lịch tiêm chủng (mốc tháng & chi phí) và tự động nhận mã ưu đãi Shopee Mẹ & Bé.
+      </p>
+    </div>
+
+    <!-- KHU VỰC 1: NÚT CHỌN ĐỘ TUỔI (BẤM LÀ NHẢY SHOPEE + XỔ LỊCH TIÊM) -->
+    <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200 space-y-3">
+      <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider">
+        👇 Chọn độ tuổi của bé (Bấm để xem lịch & giá tiêm):
+      </label>
+      
+      <div class="grid grid-cols-3 gap-2">
+        <button onclick="selectAge('1-2', 'https://s.shopee.vn/30ojYceOxs')" 
+                class="border-2 border-teal-500 bg-teal-50 text-teal-800 py-3 rounded-xl font-bold text-xs hover:bg-teal-600 hover:text-white transition shadow-sm active:scale-95">
+           Bé 1 - 2 Tuổi
+        </button>
+
+        <button onclick="selectAge('2-3', 'https://s.shopee.vn/30ojYceOxs')" 
+                class="border-2 border-teal-500 bg-teal-50 text-teal-800 py-3 rounded-xl font-bold text-xs hover:bg-teal-600 hover:text-white transition shadow-sm active:scale-95">
+           Bé 2 - 3 Tuổi
+        </button>
+
+        <button onclick="selectAge('4-5', 'https://s.shopee.vn/30ojYceOxs')" 
+                class="border-2 border-teal-500 bg-teal-50 text-teal-800 py-3 rounded-xl font-bold text-xs hover:bg-teal-600 hover:text-white transition shadow-sm active:scale-95">
+           Bé 4 - 5 Tuổi
+        </button>
+      </div>
+    </div>
+
+    <!-- KHU VỰC 2: COMBO BỘ 3 DỤNG CỤ ĐO NHIỆT ĐỘ CẦN THIẾT -->
+    <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200 space-y-3">
+      <div class="flex justify-between items-center border-b pb-2">
+        <label class="block text-xs font-bold text-slate-800 uppercase tracking-wider">
+          🔥 Bộ 3 Dụng Cụ Đo Nhiệt Mẹ Bỉm Cần Có
+        </label>
+        <span class="text-[10px] bg-red-100 text-red-600 font-bold px-2 py-0.5 rounded-full">Tiết Kiệm Đêm Lạnh</span>
+      </div>
+
+      <!-- COMBO TỔNG TẮT -->
+      <div class="bg-amber-50 border border-amber-200 p-3 rounded-xl flex justify-between items-center">
+        <div>
+          <span class="block text-xs font-bold text-amber-900">📦 Trọn Bộ 3 Món Chăm Sóc Sức Khỏe Bé</span>
+          <span class="text-[10px] text-amber-700">Gồm: Đo trán + Đo sữa + Đo nước tắm</span>
+        </div>
+        <div class="text-right">
+          <span class="block text-xs font-extrabold text-red-600">349.000đ - 594.000đ</span>
+          <span class="text-[9px] text-slate-400 line-through">650.000đ</span>
+        </div>
+      </div>
+
+      <!-- DANH SÁCH TỪNG MÓN VỚI LINK AFFILIATE CHUẨN -->
+      <div class="space-y-2 pt-1">
+
+        <!-- Món 1: Nhiệt kế hồng ngoại -->
+        <a href="https://s.shopee.vn/30ojYceOxs" target="_blank" 
+           class="flex justify-between items-center bg-red-50 border border-red-200 p-3 rounded-xl hover:bg-red-100 transition group">
+          <div class="flex items-center space-x-2.5">
+            <span class="text-base">🔫</span>
+            <div>
+              <strong class="block text-xs text-slate-800 group-hover:text-red-700">1. Nhiệt Kế Hồng Ngoại Bắn Trán (1s)</strong>
+              <span class="text-[10px] text-slate-500">Đo khi bé sốt đêm, không làm bé thức giấc</span>
+            </div>
+          </div>
+          <div class="text-right shrink-0 ml-2">
+            <span class="block text-xs font-bold text-red-600">195k - 415k</span>
+            <span class="inline-block bg-red-500 text-white font-bold text-[9px] px-2 py-1 rounded-lg mt-0.5">Xem Shop</span>
+          </div>
+        </a>
+
+        <!-- Món 2: Bút thử nhiệt độ sữa -->
+        <a href="https://s.shopee.vn/3LRZxA8Zl9" target="_blank" 
+           class="flex justify-between items-center bg-orange-50 border border-orange-200 p-3 rounded-xl hover:bg-orange-100 transition group">
+          <div class="flex items-center space-x-2.5">
+            <span class="text-base">🍼</span>
+            <div>
+              <strong class="block text-xs text-slate-800 group-hover:text-orange-700">2. Bút Thử Nhiệt Đồ Ăn & Sữa Pha</strong>
+              <span class="text-[10px] text-slate-500">Giữ chuẩn dưỡng chất sữa, chống đau bụng</span>
+            </div>
+          </div>
+          <div class="text-right shrink-0 ml-2">
+            <span class="block text-xs font-bold text-orange-600">95k - 120k</span>
+            <span class="inline-block bg-orange-500 text-white font-bold text-[9px] px-2 py-1 rounded-lg mt-0.5">Xem Shop</span>
+          </div>
+        </a>
+
+        <!-- Món 3: Nhiệt kế thả chậu tắm -->
+        <a href="https://s.shopee.vn/8AWpiBMxzv" target="_blank" 
+           class="flex justify-between items-center bg-blue-50 border border-blue-200 p-3 rounded-xl hover:bg-blue-100 transition group">
+          <div class="flex items-center space-x-2.5">
+            <span class="text-base">🐥</span>
+            <div>
+              <strong class="block text-xs text-slate-800 group-hover:text-blue-700">3. Nhiệt Kế Thả Chậu Tắm Cho Bé</strong>
+              <span class="text-[10px] text-slate-500">Đo nước tắm 37-38°C phòng cảm lạnh</span>
+            </div>
+          </div>
+          <div class="text-right shrink-0 ml-2">
+            <span class="block text-xs font-bold text-blue-600">59.000đ</span>
+            <span class="inline-block bg-blue-500 text-white font-bold text-[9px] px-2 py-1 rounded-lg mt-0.5">Xem Shop</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- KHU VỰC KẾT QUẢ KHI BẤM CHỌN TUỔI -->
+    <div id="result-box" class="hidden space-y-4">
+
+      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-3 text-xs text-emerald-800 flex items-center justify-between">
+        <span>✅ Đã mở trang ưu đãi Shopee Mẹ & Bé ở tab mới!</span>
+      </div>
+
+      <!-- KẾT QUẢ BÉ 1 - 2 TUỔI -->
+      <div id="content-1-2" class="detail-content hidden bg-white rounded-2xl p-4 shadow-sm border space-y-3">
+        <h3 class="font-bold text-sm text-teal-700 border-b pb-2">📌 Lịch Tiêm Bé 1 - 2 Tuổi (12 - 24 tháng)</h3>
+        
+        <div class="space-y-2.5 text-xs">
+          <div class="bg-slate-50 p-2.5 rounded-xl border">
+            <div class="flex justify-between font-bold text-slate-800 mb-0.5">
+              <span>💉 Sởi - Quai bị - Rubella</span>
+              <span class="text-teal-700">~485k - 498k</span>
+            </div>
+            <p class="text-[11px] text-slate-600">⏰ Tiêm lúc <b>12 - 15 tháng tuổi</b> (Mũi 1).</p>
+          </div>
+
+          <div class="bg-slate-50 p-2.5 rounded-xl border">
+            <div class="flex justify-between font-bold text-slate-800 mb-0.5">
+              <span>💉 Thủy đậu (Varilrix / Varivax)</span>
+              <span class="text-teal-700">~1.070k - 1.138k</span>
+            </div>
+            <p class="text-[11px] text-slate-600">⏰ Tiêm từ <b>12 - 15 tháng tuổi</b> (Mũi 1).</p>
+          </div>
+
+          <div class="bg-slate-50 p-2.5 rounded-xl border">
+            <div class="flex justify-between font-bold text-slate-800 mb-0.5">
+              <span>💉 Viêm gan A (Avaxim / Havax)</span>
+              <span class="text-teal-700">~295k - 685k</span>
+            </div>
+            <p class="text-[11px] text-slate-600">⏰ Mũi 1 từ <b>12 tháng tuổi</b>. Mũi 2 sau 6-12 tháng.</p>
+          </div>
+
+          <div class="bg-slate-50 p-2.5 rounded-xl border">
+            <div class="flex justify-between font-bold text-slate-800 mb-0.5">
+              <span>💉 Viêm não Nhật Bản (Imojev)</span>
+              <span class="text-teal-700">~920k - 968k</span>
+            </div>
+            <p class="text-[11px] text-slate-600">⏰ Tiêm lúc <b>9 - 12 tháng tuổi</b>. Mũi 2 sau 1 năm.</p>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <a href="https://s.shopee.vn/30ojYceOxs" target="_blank" class="block text-center bg-orange-500 hover:bg-orange-600 text-white py-2.5 rounded-xl text-xs font-bold shadow">
+            🔥 Sắm Nhiệt Kế Hồng Ngoại Phòng Sốt Đêm Cho Bé 1-2 Tuổi
+          </a>
+        </div>
+      </div>
+
+      <!-- KẾT QUẢ BÉ 2 - 3 TUỔI -->
+      <div id="content-2-3" class="detail-content hidden bg-white rounded-2xl p-4 shadow-sm border space-y-3">
+        <h3 class="font-bold text-sm text-teal-700 border-b pb-2">📌 Lịch Tiêm Bé 2 - 3 Tuổi (24 - 36 tháng)</h3>
+        
+        <div class="space-y-2.5 text-xs">
+          <div class="bg-slate-50 p-2.5 rounded-xl border">
+            <div class="flex justify-between font-bold text-slate-800 mb-0.5">
+              <span>💉 6 trong 1 (Nhắc mũi 4)</span>
+              <span class="text-teal-700">~995k - 1.098k</span>
+            </div>
+            <p class="text-[11px] text-slate-600">⏰ Tiêm trong khoảng <b>16 - 24 tháng tuổi</b>.</p>
+          </div>
+
+          <div class="bg-slate-50 p-2.5 rounded-xl border">
+            <div class="flex justify-between font-bold text-slate-800 mb-0.5">
+              <span>💉 Cúm Mùa (Vaxigrip Tetra)</span>
+              <span class="text-teal-700">~333k - 356k</span>
+            </div>
+            <p class="text-[11px] text-slate-600">⏰ Tiêm định kỳ <b>1 năm / 1 lần</b> vào mùa lạnh.</p>
+          </div>
+
+          <div class="bg-slate-50 p-2.5 rounded-xl border">
+            <div class="flex justify-between font-bold text-slate-800 mb-0.5">
+              <span>💉 Tả & Thương Hàn</span>
+              <span class="text-teal-700">~180k - 380k</span>
+            </div>
+            <p class="text-[11px] text-slate-600">⏰ Tiêm/Uống khi tròn <b>24 tháng tuổi</b>.</p>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <a href="https://s.shopee.vn/3LRZxA8Zl9" target="_blank" class="block text-center bg-orange-500 hover:bg-orange-600 text-white py-2.5 rounded-xl text-xs font-bold shadow">
+            🔥 Sắm Bút Đo Nhiệt Pha Sữa Tránh Đau Bụng Bé
+          </a>
+        </div>
+      </div>
+
+      <!-- KẾT QUẢ BÉ 4 - 5 TUỔI -->
+      <div id="content-4-5" class="detail-content hidden bg-white rounded-2xl p-4 shadow-sm border space-y-3">
+        <h3 class="font-bold text-sm text-teal-700 border-b pb-2">📌 Lịch Tiêm Bé 4 - 5 Tuổi (Tiền Tiểu Học)</h3>
+        
+        <div class="space-y-2.5 text-xs">
+          <div class="bg-slate-50 p-2.5 rounded-xl border">
+            <div class="flex justify-between font-bold text-slate-800 mb-0.5">
+              <span>💉 Sốt Xuất Huyết (Qdenga)</span>
+              <span class="text-teal-700">~1.290k - 1.390k</span>
+            </div>
+            <p class="text-[11px] text-slate-600">⏰ Tiêm từ <b>tròn 4 tuổi trở lên</b> (2 mũi cách nhau 3 tháng).</p>
+          </div>
+
+          <div class="bg-slate-50 p-2.5 rounded-xl border">
+            <div class="flex justify-between font-bold text-slate-800 mb-0.5">
+              <span>💉 Bạch Hầu - Ho Gà - Uốn Ván - Bại Liệt</span>
+              <span class="text-teal-700">~700k - 850k</span>
+            </div>
+            <p class="text-[11px] text-slate-600">⏰ Tiêm 1 mũi nhắc lúc <b>4 - 6 tuổi</b>.</p>
+          </div>
+
+          <div class="bg-slate-50 p-2.5 rounded-xl border">
+            <div class="flex justify-between font-bold text-slate-800 mb-0.5">
+              <span>💉 Sởi - Quai Bị - Rubella (Nhắc)</span>
+              <span class="text-teal-700">~485k - 498k</span>
+            </div>
+            <p class="text-[11px] text-slate-600">⏰ Tiêm nhắc trong giai đoạn <b>4 - 6 tuổi</b>.</p>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <a href="https://s.shopee.vn/8AWpiBMxzv" target="_blank" class="block text-center bg-orange-500 hover:bg-orange-600 text-white py-2.5 rounded-xl text-xs font-bold shadow">
+            🔥 Sắm Nhiệt Kế Đo Nước Tắm Chống Cảm Lạnh Mùa Đông
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-xs text-slate-400 bg-white border-t">
+    © 2026 KidCare 365. Sổ tay tra cứu lịch tiêm & thiết bị chăm sóc bé.
+  </footer>
+
+  <!-- JAVASCRIPT KÍCH HOẠT -->
+  <script>
+    function selectAge(ageGroup, affiliateUrl) {
+      // 1. Tự động bật Tab Shopee Affiliate tương ứng ở Background
+      window.open(affiliateUrl, '_blank');
+
+      // 2. Mở khung kết quả trên trang hiện tại
+      document.getElementById('result-box').classList.remove('hidden');
+
+      // 3. Ẩn tất cả nội dung tuổi cũ
+      const contents = document.querySelectorAll('.detail-content');
+      contents.forEach(el => el.classList.add('hidden'));
+
+      // 4. Hiển thị nội dung tương ứng tuổi chọn
+      document.getElementById('content-' + ageGroup).classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>
