@@ -3,37 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KidCare 365 - Sổ Tay Tiêm Chủng & Thiết Bị Cho Bé</title>
+  <title>KidCare 365 - Tra Cứu Lịch Tiêm & Thiết Bị Cho Bé</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-100 text-slate-800 font-sans min-h-screen flex flex-col justify-between">
 
   <!-- Header -->
-  <header class="bg-white border-b py-4 px-6 flex justify-between items-center shadow-sm sticky top-0 z-50">
+  <header class="bg-white border-b py-3.5 px-5 flex justify-between items-center shadow-sm sticky top-0 z-50">
     <div class="flex items-center space-x-2">
       <div class="w-8 h-8 bg-teal-600 rounded-lg flex items-center justify-center text-white text-lg font-bold">💉</div>
-      <span class="font-bold text-lg text-slate-900">KidCare 365</span>
+      <span class="font-bold text-base text-slate-900">KidCare 365</span>
     </div>
-    <span class="text-xs bg-teal-50 text-teal-700 px-3 py-1 rounded-full font-semibold border border-teal-200">
+    <span class="text-[11px] bg-teal-50 text-teal-700 px-3 py-1 rounded-full font-semibold border border-teal-200">
       Lịch VNVC & Long Châu 2026
     </span>
   </header>
 
   <!-- Main Content -->
-  <main class="max-w-xl w-full mx-auto p-4 space-y-5 flex-grow">
+  <main class="max-w-xl w-full mx-auto p-4 space-y-4 flex-grow">
 
     <!-- Banner -->
-    <div class="bg-gradient-to-r from-teal-600 to-emerald-600 rounded-2xl p-5 text-white shadow-md space-y-2">
-      <h1 class="text-lg font-bold">👶 Tra Cứu Lịch Tiêm & Bộ Thiết Bị Cho Bé</h1>
+    <div class="bg-gradient-to-r from-teal-600 to-emerald-600 rounded-2xl p-4 text-white shadow-md space-y-1.5">
+      <h1 class="text-base font-bold">👶 Sổ Tay Tra Cứu Lịch Tiêm & Chăm Sóc Trẻ</h1>
       <p class="text-xs text-teal-100 leading-relaxed">
-        Bấm chọn đúng độ tuổi của bé để mở lịch tiêm chủng (mốc tháng & chi phí) và tự động nhận mã ưu đãi Shopee Mẹ & Bé.
+        Bấm chọn độ tuổi của bé bên dưới để tra cứu chi tiết phác đồ, mốc tháng tuổi, chi phí và lưu ý chăm sóc sức khỏe mùa lạnh.
       </p>
     </div>
 
-    <!-- KHU VỰC 1: NÚT CHỌN ĐỘ TUỔI (BẤM LÀ NHẢY SHOPEE + XỔ LỊCH TIÊM) -->
-    <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200 space-y-3">
+    <!-- KHU VỰC 1: NÚT CHỌN ĐỘ TUỔI -->
+    <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200 space-y-2.5">
       <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider">
-        👇 Chọn độ tuổi của bé (Bấm để xem lịch & giá tiêm):
+        👇 Bấm chọn độ tuổi hiện tại của bé:
       </label>
       
       <div class="grid grid-cols-3 gap-2">
@@ -54,11 +54,150 @@
       </div>
     </div>
 
-    <!-- KHU VỰC 2: COMBO BỘ 3 DỤNG CỤ ĐO NHIỆT ĐỘ CẦN THIẾT -->
+    <!-- KHU VỰC 2: HIỂN THỊ KẾT QUẢ LỊCH TIÊM CHI TIẾT (ĐƯỢC ĐƯA LÊN TRÊN COMBO) -->
+    <div id="result-box" class="hidden space-y-4">
+
+      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-2.5 text-xs text-emerald-800 flex items-center justify-between">
+        <span>✅ Đã cập nhật bảng giá VNVC / Long Châu & mở ưu đãi Shopee!</span>
+      </div>
+
+      <!-- KẾT QUẢ BÉ 1 - 2 TUỔI -->
+      <div id="content-1-2" class="detail-content hidden bg-white rounded-2xl p-4 shadow-sm border space-y-3.5">
+        <h3 class="font-bold text-sm text-teal-700 border-b pb-2 flex items-center justify-between">
+          <span>📌 Lịch Tiêm Bé 1 - 2 Tuổi (12 - 24 tháng)</span>
+          <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full">Giai Đoạn Củng Cố</span>
+        </h3>
+        
+        <div class="space-y-3 text-xs">
+          <!-- Mũi 1 -->
+          <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-1">
+            <div class="flex justify-between font-bold text-slate-800">
+              <span>💉 Sởi - Quai bị - Rubella (MMR II / Priorix)</span>
+              <span class="text-teal-700 font-bold">~485k - 498k</span>
+            </div>
+            <p class="text-[11px] text-slate-600">⏰ <b>Thời gian:</b> Lần 1 khi tròn <b>12 - 15 tháng tuổi</b>. Lần 2 nhắc sau 3 tháng hoặc lúc 4-6 tuổi.</p>
+            <p class="text-[11px] text-slate-500 italic">💡 <b>Tại sao cần tiêm:</b> Giai đoạn này kháng thể mẹ truyền bắt đầu cạn kiệt, trẻ rất dễ bị biến chứng sởi gây viêm phổi, viêm não.</p>
+          </div>
+
+          <!-- Mũi 2 -->
+          <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-1">
+            <div class="flex justify-between font-bold text-slate-800">
+              <span>💉 Thủy Đậu (Varilrix / Varivax / Barycela)</span>
+              <span class="text-teal-700 font-bold">~1.070k - 1.138k</span>
+            </div>
+            <p class="text-[11px] text-slate-600">⏰ <b>Thời gian:</b> Mũi 1 từ <b>12 - 15 tháng tuổi</b>. Mũi 2 tiêm nhắc sau đó ít nhất 3 tháng.</p>
+            <p class="text-[11px] text-slate-500 italic">💡 <b>Phòng tránh:</b> Giảm 98% nguy cơ mọc mụn nước thủy đậu lây lan toàn thân và sẹo vĩnh viễn.</p>
+          </div>
+
+          <!-- Mũi 3 -->
+          <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-1">
+            <div class="flex justify-between font-bold text-slate-800">
+              <span>💉 Viêm Gan A (Avaxim 80U / Havax)</span>
+              <span class="text-teal-700 font-bold">~295k - 685k</span>
+            </div>
+            <p class="text-[11px] text-slate-600">⏰ <b>Thời gian:</b> Mũi 1 từ <b>12 tháng tuổi</b>. Mũi 2 tiêm nhắc lại sau mũi 1 từ 6 - 12 tháng.</p>
+            <p class="text-[11px] text-slate-500 italic">💡 <b>Phòng tránh:</b> Bảo vệ gan khi trẻ bắt đầu ăn dặm phong phú và liếm/ngậm đồ chơi.</p>
+          </div>
+
+          <!-- Mũi 4 -->
+          <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-1">
+            <div class="flex justify-between font-bold text-slate-800">
+              <span>💉 Viêm Não Nhật Bản (Imojev / Jevax)</span>
+              <span class="text-teal-700 font-bold">~920k - 968k</span>
+            </div>
+            <p class="text-[11px] text-slate-600">⏰ <b>Thời gian:</b> Mũi 1 khi trẻ tròn <b>9 - 12 tháng</b>. Mũi 2 tiêm nhắc lại sau 1 năm.</p>
+            <p class="text-[11px] text-slate-500 italic">💡 <b>Đặc biệt quan trọng:</b> Muỗi muỗi đốt lây truyền bệnh tổn thương thần kinh trung ương nguy hiểm.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- KẾT QUẢ BÉ 2 - 3 TUỔI -->
+      <div id="content-2-3" class="detail-content hidden bg-white rounded-2xl p-4 shadow-sm border space-y-3.5">
+        <h3 class="font-bold text-sm text-teal-700 border-b pb-2 flex items-center justify-between">
+          <span>📌 Lịch Tiêm Bé 2 - 3 Tuổi (24 - 36 tháng)</span>
+          <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full">Bắt Đầu Đi Lớp</span>
+        </h3>
+        
+        <div class="space-y-3 text-xs">
+          <!-- Mũi 1 -->
+          <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-1">
+            <div class="flex justify-between font-bold text-slate-800">
+              <span>💉 6 Trong 1 (Hexaxim / Infanrix Hexa)</span>
+              <span class="text-teal-700 font-bold">~995k - 1.098k</span>
+            </div>
+            <p class="text-[11px] text-slate-600">⏰ <b>Thời gian:</b> Mũi 4 (tiêm nhắc lại) trong khoảng từ <b>16 - 24 tháng tuổi</b> (cần hoàn thành trước 2 tuổi).</p>
+            <p class="text-[11px] text-slate-500 italic">💡 <b>Phòng bệnh:</b> Bạch hầu, Ho gà, Uốn ván, Bại liệt, Viêm gan B, Viêm màng não mủ do Hib.</p>
+          </div>
+
+          <!-- Mũi 2 -->
+          <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-1">
+            <div class="flex justify-between font-bold text-slate-800">
+              <span>💉 Cúm Mùa (Vaxigrip Tetra / Influvac)</span>
+              <span class="text-teal-700 font-bold">~333k - 356k</span>
+            </div>
+            <p class="text-[11px] text-slate-600">⏰ <b>Thời gian:</b> Tiêm định kỳ <b>1 năm / 1 lần</b> (đặc biệt vào giai đoạn Thu - Đông giao mùa).</p>
+            <p class="text-[11px] text-slate-500 italic">💡 <b>Lợi ích:</b> Giảm biến chứng phế quản, viêm phổi và giảm số lần sốt đêm nghỉ học ở trường.</p>
+          </div>
+
+          <!-- Mũi 3 -->
+          <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-1">
+            <div class="flex justify-between font-bold text-slate-800">
+              <span>💉 Tả (mORCVAX) & Thương Hàn (Typhim Vi)</span>
+              <span class="text-teal-700 font-bold">~180k - 380k</span>
+            </div>
+            <p class="text-[11px] text-slate-600">⏰ <b>Thời gian:</b> Khi bé tròn <b>24 tháng tuổi (2 tuổi)</b>. Tả uống 2 liều cách nhau 2 tuần. Thương hàn tiêm 1 mũi nhắc mỗi 3 năm.</p>
+            <p class="text-[11px] text-slate-500 italic">💡 <b>Môi trường lớp học:</b> Phòng nhiễm khuẩn đường tiêu hóa khi con ăn uống tập thể ở nhà trẻ.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- KẾT QUẢ BÉ 4 - 5 TUỔI -->
+      <div id="content-4-5" class="detail-content hidden bg-white rounded-2xl p-4 shadow-sm border space-y-3.5">
+        <h3 class="font-bold text-sm text-teal-700 border-b pb-2 flex items-center justify-between">
+          <span>📌 Lịch Tiêm Bé 4 - 5 Tuổi (Tiền Tiểu Học)</span>
+          <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full">Chuẩn Bị Vào Lớp 1</span>
+        </h3>
+        
+        <div class="space-y-3 text-xs">
+          <!-- Mũi 1 -->
+          <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-1">
+            <div class="flex justify-between font-bold text-slate-800">
+              <span>💉 Sốt Xuất Huyết (Qdenga)</span>
+              <span class="text-teal-700 font-bold">~1.290k - 1.390k</span>
+            </div>
+            <p class="text-[11px] text-slate-600">⏰ <b>Thời gian:</b> Dành cho trẻ từ <b>tròn 4 tuổi trở lên</b>. Phác đồ gồm 2 mũi tiêm cách nhau đúng 3 tháng.</p>
+            <p class="text-[11px] text-slate-500 italic">💡 <b>Vắc-xin mới:</b> Phòng 4 chủng virus Dengue, giúp bé không lo nguy cơ nhập viện cấp cứu do sốt xuất huyết.</p>
+          </div>
+
+          <!-- Mũi 2 -->
+          <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-1">
+            <div class="flex justify-between font-bold text-slate-800">
+              <span>💉 Bạch Hầu - Ho Gà - Uốn Ván - Bại Liệt</span>
+              <span class="text-teal-700 font-bold">~700k - 850k</span>
+            </div>
+            <p class="text-[11px] text-slate-600">⏰ <b>Thời gian:</b> Tiêm 1 mũi nhắc lại trong độ tuổi từ <b>4 - 6 tuổi</b> trước khi trẻ bước vào Tiểu học.</p>
+            <p class="text-[11px] text-slate-500 italic">💡 <b>Nhắc miễn dịch:</b> Miễn dịch từ mũi 6in1 lúc nhỏ đã giảm dần, cần củng cố để kháng bệnh học đường.</p>
+          </div>
+
+          <!-- Mũi 3 -->
+          <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-1">
+            <div class="flex justify-between font-bold text-slate-800">
+              <span>💉 Sởi - Quai Bị - Rubella (Mũi 2 nhắc lại)</span>
+              <span class="text-teal-700 font-bold">~485k - 498k</span>
+            </div>
+            <p class="text-[11px] text-slate-600">⏰ <b>Thời gian:</b> Tiêm nhắc mũi 2 ở mốc <b>4 - 6 tuổi</b> (nếu chưa nhắc ở lúc 15-18 tháng tuổi).</p>
+            <p class="text-[11px] text-slate-500 italic">💡 <b>Tác dụng:</b> Đảm bảo tạo kháng thể bền vững đến tận tuổi trưởng thành.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- KHU VỰC 3: COMBO BỘ 3 DỤNG CỤ ĐO NHIỆT ĐỘ (NẰM DƯỚI LỊCH TIÊM) -->
     <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200 space-y-3">
       <div class="flex justify-between items-center border-b pb-2">
         <label class="block text-xs font-bold text-slate-800 uppercase tracking-wider">
-          🔥 Bộ 3 Dụng Cụ Đo Nhiệt Mẹ Bỉm Cần Có
+          🔥 BỘ 3 DỤNG CỤ ĐO NHIỆT MẸ BỈM CẦN CÓ
         </label>
         <span class="text-[10px] bg-red-100 text-red-600 font-bold px-2 py-0.5 rounded-full">Tiết Kiệm Đêm Lạnh</span>
       </div>
@@ -75,7 +214,7 @@
         </div>
       </div>
 
-      <!-- DANH SÁCH TỪNG MÓN VỚI LINK AFFILIATE CHUẨN -->
+      <!-- DANH SÁCH TỪNG MÓN AFFILIATE -->
       <div class="space-y-2 pt-1">
 
         <!-- Món 1: Nhiệt kế hồng ngoại -->
@@ -129,145 +268,17 @@
       </div>
     </div>
 
-    <!-- KHU VỰC KẾT QUẢ KHI BẤM CHỌN TUỔI -->
-    <div id="result-box" class="hidden space-y-4">
-
-      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-3 text-xs text-emerald-800 flex items-center justify-between">
-        <span>✅ Đã mở trang ưu đãi Shopee Mẹ & Bé ở tab mới!</span>
-      </div>
-
-      <!-- KẾT QUẢ BÉ 1 - 2 TUỔI -->
-      <div id="content-1-2" class="detail-content hidden bg-white rounded-2xl p-4 shadow-sm border space-y-3">
-        <h3 class="font-bold text-sm text-teal-700 border-b pb-2">📌 Lịch Tiêm Bé 1 - 2 Tuổi (12 - 24 tháng)</h3>
-        
-        <div class="space-y-2.5 text-xs">
-          <div class="bg-slate-50 p-2.5 rounded-xl border">
-            <div class="flex justify-between font-bold text-slate-800 mb-0.5">
-              <span>💉 Sởi - Quai bị - Rubella</span>
-              <span class="text-teal-700">~485k - 498k</span>
-            </div>
-            <p class="text-[11px] text-slate-600">⏰ Tiêm lúc <b>12 - 15 tháng tuổi</b> (Mũi 1).</p>
-          </div>
-
-          <div class="bg-slate-50 p-2.5 rounded-xl border">
-            <div class="flex justify-between font-bold text-slate-800 mb-0.5">
-              <span>💉 Thủy đậu (Varilrix / Varivax)</span>
-              <span class="text-teal-700">~1.070k - 1.138k</span>
-            </div>
-            <p class="text-[11px] text-slate-600">⏰ Tiêm từ <b>12 - 15 tháng tuổi</b> (Mũi 1).</p>
-          </div>
-
-          <div class="bg-slate-50 p-2.5 rounded-xl border">
-            <div class="flex justify-between font-bold text-slate-800 mb-0.5">
-              <span>💉 Viêm gan A (Avaxim / Havax)</span>
-              <span class="text-teal-700">~295k - 685k</span>
-            </div>
-            <p class="text-[11px] text-slate-600">⏰ Mũi 1 từ <b>12 tháng tuổi</b>. Mũi 2 sau 6-12 tháng.</p>
-          </div>
-
-          <div class="bg-slate-50 p-2.5 rounded-xl border">
-            <div class="flex justify-between font-bold text-slate-800 mb-0.5">
-              <span>💉 Viêm não Nhật Bản (Imojev)</span>
-              <span class="text-teal-700">~920k - 968k</span>
-            </div>
-            <p class="text-[11px] text-slate-600">⏰ Tiêm lúc <b>9 - 12 tháng tuổi</b>. Mũi 2 sau 1 năm.</p>
-          </div>
-        </div>
-
-        <div class="pt-2">
-          <a href="https://s.shopee.vn/30ojYceOxs" target="_blank" class="block text-center bg-orange-500 hover:bg-orange-600 text-white py-2.5 rounded-xl text-xs font-bold shadow">
-            🔥 Sắm Nhiệt Kế Hồng Ngoại Phòng Sốt Đêm Cho Bé 1-2 Tuổi
-          </a>
-        </div>
-      </div>
-
-      <!-- KẾT QUẢ BÉ 2 - 3 TUỔI -->
-      <div id="content-2-3" class="detail-content hidden bg-white rounded-2xl p-4 shadow-sm border space-y-3">
-        <h3 class="font-bold text-sm text-teal-700 border-b pb-2">📌 Lịch Tiêm Bé 2 - 3 Tuổi (24 - 36 tháng)</h3>
-        
-        <div class="space-y-2.5 text-xs">
-          <div class="bg-slate-50 p-2.5 rounded-xl border">
-            <div class="flex justify-between font-bold text-slate-800 mb-0.5">
-              <span>💉 6 trong 1 (Nhắc mũi 4)</span>
-              <span class="text-teal-700">~995k - 1.098k</span>
-            </div>
-            <p class="text-[11px] text-slate-600">⏰ Tiêm trong khoảng <b>16 - 24 tháng tuổi</b>.</p>
-          </div>
-
-          <div class="bg-slate-50 p-2.5 rounded-xl border">
-            <div class="flex justify-between font-bold text-slate-800 mb-0.5">
-              <span>💉 Cúm Mùa (Vaxigrip Tetra)</span>
-              <span class="text-teal-700">~333k - 356k</span>
-            </div>
-            <p class="text-[11px] text-slate-600">⏰ Tiêm định kỳ <b>1 năm / 1 lần</b> vào mùa lạnh.</p>
-          </div>
-
-          <div class="bg-slate-50 p-2.5 rounded-xl border">
-            <div class="flex justify-between font-bold text-slate-800 mb-0.5">
-              <span>💉 Tả & Thương Hàn</span>
-              <span class="text-teal-700">~180k - 380k</span>
-            </div>
-            <p class="text-[11px] text-slate-600">⏰ Tiêm/Uống khi tròn <b>24 tháng tuổi</b>.</p>
-          </div>
-        </div>
-
-        <div class="pt-2">
-          <a href="https://s.shopee.vn/3LRZxA8Zl9" target="_blank" class="block text-center bg-orange-500 hover:bg-orange-600 text-white py-2.5 rounded-xl text-xs font-bold shadow">
-            🔥 Sắm Bút Đo Nhiệt Pha Sữa Tránh Đau Bụng Bé
-          </a>
-        </div>
-      </div>
-
-      <!-- KẾT QUẢ BÉ 4 - 5 TUỔI -->
-      <div id="content-4-5" class="detail-content hidden bg-white rounded-2xl p-4 shadow-sm border space-y-3">
-        <h3 class="font-bold text-sm text-teal-700 border-b pb-2">📌 Lịch Tiêm Bé 4 - 5 Tuổi (Tiền Tiểu Học)</h3>
-        
-        <div class="space-y-2.5 text-xs">
-          <div class="bg-slate-50 p-2.5 rounded-xl border">
-            <div class="flex justify-between font-bold text-slate-800 mb-0.5">
-              <span>💉 Sốt Xuất Huyết (Qdenga)</span>
-              <span class="text-teal-700">~1.290k - 1.390k</span>
-            </div>
-            <p class="text-[11px] text-slate-600">⏰ Tiêm từ <b>tròn 4 tuổi trở lên</b> (2 mũi cách nhau 3 tháng).</p>
-          </div>
-
-          <div class="bg-slate-50 p-2.5 rounded-xl border">
-            <div class="flex justify-between font-bold text-slate-800 mb-0.5">
-              <span>💉 Bạch Hầu - Ho Gà - Uốn Ván - Bại Liệt</span>
-              <span class="text-teal-700">~700k - 850k</span>
-            </div>
-            <p class="text-[11px] text-slate-600">⏰ Tiêm 1 mũi nhắc lúc <b>4 - 6 tuổi</b>.</p>
-          </div>
-
-          <div class="bg-slate-50 p-2.5 rounded-xl border">
-            <div class="flex justify-between font-bold text-slate-800 mb-0.5">
-              <span>💉 Sởi - Quai Bị - Rubella (Nhắc)</span>
-              <span class="text-teal-700">~485k - 498k</span>
-            </div>
-            <p class="text-[11px] text-slate-600">⏰ Tiêm nhắc trong giai đoạn <b>4 - 6 tuổi</b>.</p>
-          </div>
-        </div>
-
-        <div class="pt-2">
-          <a href="https://s.shopee.vn/8AWpiBMxzv" target="_blank" class="block text-center bg-orange-500 hover:bg-orange-600 text-white py-2.5 rounded-xl text-xs font-bold shadow">
-            🔥 Sắm Nhiệt Kế Đo Nước Tắm Chống Cảm Lạnh Mùa Đông
-          </a>
-        </div>
-      </div>
-
-    </div>
-
   </main>
 
   <!-- Footer -->
   <footer class="text-center py-4 text-xs text-slate-400 bg-white border-t">
-    © 2026 KidCare 365. Sổ tay tra cứu lịch tiêm & thiết bị chăm sóc bé.
+    © 2026 KidCare 365. Bảng tra cứu lịch tiêm chủng & thiết bị chăm sóc bé.
   </footer>
 
   <!-- JAVASCRIPT KÍCH HOẠT -->
   <script>
     function selectAge(ageGroup, affiliateUrl) {
-      // 1. Tự động bật Tab Shopee Affiliate tương ứng ở Background
+      // 1. Tự động bật Tab Shopee Affiliate ở Background
       window.open(affiliateUrl, '_blank');
 
       // 2. Mở khung kết quả trên trang hiện tại
